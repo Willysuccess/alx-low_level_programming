@@ -1,15 +1,19 @@
-#include "main.h"
-
+#include "_putchar.h"
 /**
-* print_alphabet - llamar la funcion desde el main
-*/
+ * print_alphabet - print lowercase
+ * Description:Print lowercase alphabet
+ * Return: 0
+ */
+
+
 void print_alphabet(void)
 {
-	char i;
+int alpha = 'a';
 
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+while (alpha <= 'z')
+{
+_putchar(alpha);
+alpha++;
+}
+_putchar('\n');
 }
