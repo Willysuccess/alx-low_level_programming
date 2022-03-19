@@ -1,24 +1,28 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
-* main - Lanzador
-*
-* Return: Always 0.
-*/
-
+ * main - main block
+ * Description: print alphabet in lowercase
+ * Return: 0
+ */
 int main(void)
 {
-	char a = 'a';
-	char b = 'A';
+	char c = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
+	while (c <= 'z')
 	{
-		putchar(a);
+		putchar(c);
+		c++;
 	}
-	for (b = 'A'; b <= 'z'; b++)
+
+	c = 'A';
+
+	while (c <= 'Z')
 	{
-		putchar(b);
+		putchar(c);
+		c++;
 	}
+
 	putchar('\n');
 	return (0);
-}			
+}		
